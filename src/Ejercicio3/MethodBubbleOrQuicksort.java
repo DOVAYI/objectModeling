@@ -1,7 +1,40 @@
+/**
+ * Esta clase permite ordenar un grupo de numeros Eligos aleatoriamente.
+ * 
+ * La solucion fue tomada de internet en Pseudocodigo
+ * fue modificada y adaptada a este contexto
+ * 
+ * ej.:
+ * 
+ * EstaClase clase = new EstaClase();
+ * 
+ 
+ * @version 1.0.0 2022-04-16
+ * 
+ * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+ *
+ * @since 1.0.0 2022-04-15
+ *
+ */
+
 package Ejercicio3;
 
 public class MethodBubbleOrQuicksort {
-
+    /**
+     * Este metodo recursivo su utiliza para ordenar un grupo de numeros
+     
+     * @param recibe una arreglo de numero desordenados
+     * @param recibe numero entero para indicar la posicion de inicio de arreglo
+     * @param recibe numero entero cantidad de elementos-1s(tamaño del array)
+     * @return retorna Lista ordenada de numeros
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     private double[] quicksort(double arrays[], int left, int rigth) {
 
         var reference = arrays[left];
@@ -35,6 +68,21 @@ public class MethodBubbleOrQuicksort {
         return arrays;
     }
 
+    /**
+     * Este metodo muestra grupo de numeros ordenados
+     
+     * @param recibe una arreglo de numero desordenados
+     * @param recibe numero entero para indicar la posicion de inicio de arreglo
+     * @param recibe numero entero cantidad de elementos-1s(tamaño del array)
+     * 
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     public void showMethodQuikSort(double array[], int start, int fin) {
         double arrayOrderBy[] = quicksort(array, start, fin);
         for (int i = 0; i < arrayOrderBy.length; i++) {
@@ -43,6 +91,20 @@ public class MethodBubbleOrQuicksort {
         }
     }
 
+    /**
+     * Este metodo recursivo su utiliza para ordenar un grupo de numeros
+     
+     * @param recibe una arreglo de numero desordenados
+     * 
+     * @return retorna Lista ordenada de numeros
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     private double[] buble(double[] arrays2) {
         double aux2;
         
@@ -58,7 +120,18 @@ public class MethodBubbleOrQuicksort {
          
         return arrays2;
     }
-
+     /**
+     * Este metodo muestra grupo de numeros ordenados
+     
+     * @param recibe una arreglo de numero desordenados
+   
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     public void showMethodBuble(double[] arrays2 ){
         double[] arrayOrderBy= buble(arrays2);
         for (int i = 0; i < arrayOrderBy.length; i++) {
