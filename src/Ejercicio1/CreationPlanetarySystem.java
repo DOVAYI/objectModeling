@@ -17,6 +17,7 @@
  */
 
 package Ejercicio1;
+
 import java.util.ArrayList;
 
 public class CreationPlanetarySystem {
@@ -32,7 +33,7 @@ public class CreationPlanetarySystem {
      * 
      * clase.listPlanetary();
      * 
-     *@return retorna Lista de obtejos tipo PlanetarySystem
+     * @return retorna Lista de obtejos tipo PlanetarySystem
      * 
      * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
      *
@@ -76,13 +77,32 @@ public class CreationPlanetarySystem {
     /**
      * Este metodo su utiliza para mostrar la fuerza de atraccion gravitacional
      * entre 2 planetas elegidos al azar
+     * 
      * @param recibe como parametro 2 numeros, estos reprsentan los planetas
      * 
-     * ejemplo de como usar.:
-     * solo se puede usar dentro de la clase
+     *               ejemplo de como usar.:
+     *               solo se puede usar dentro de la clase
      * 
-     * numbeRandom(param1,param2);
-     
+     *               numbeRandom(param1,param2);
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.1 2022-04-15
+     *
+     *
+     * 
+     */
+    /**
+     * Este metodo su utiliza para mostrar la fuerza de atraccion gravitacional
+     * entre 2 planetas elegidos al azar
+     * 
+     * @param recibe como parametro 2 numeros, estos reprsentan los planetas
+     * 
+     *               ejemplo de como usar.:
+     *               solo se puede usar dentro de la clase
+     * 
+     *               numbeRandom(param1,param2);
+     * 
      * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
      *
      * @since 1.0.0 2022-04-15
@@ -99,15 +119,18 @@ public class CreationPlanetarySystem {
                 + planetarys.get(number2).getName() + " es: " + result);
 
     }
+
     /**
      * Este metodo su utiliza para calcular la fuerza de atraccion gravitacional
      * entre 2 planetas elegidos al azar
-     * @param recibe como prametro 2 numeros, aleatorio 0 y 4  estos representan los planetas
      * 
-     * ejemplo de como usar.:
-     * solo se puede usar dentro de la clase
+     * @param recibe como prametro 2 numeros, aleatorio 0 y 4 estos representan los
+     *               planetas
      * 
-     * attractionPlanetaryGravitational(param1,param2);
+     *               ejemplo de como usar.:
+     *               solo se puede usar dentro de la clase
+     * 
+     *               attractionPlanetaryGravitational(param1,param2);
      * 
      * @return retorna el valor de la fuerza de atracción gravitacional
      * 
@@ -132,6 +155,7 @@ public class CreationPlanetarySystem {
         return attractionplanetary;
 
     }
+
     /**
      * Este metodo su utiliza para acceder a los metodos privados
      *
@@ -157,23 +181,7 @@ public class CreationPlanetarySystem {
         }
         numbeRandom((numero1 - 1), (numero2 - 1));
     }
-    /**
-     * Este metodo su utiliza para mostrar todos los planetas
-     * de este sistema. 
-     *
-     * ejemplo de como usar.:
-     * despues de instanciar esta clase:
-     * 
-     * EstaClase clase =new EstaClase();
-     * clase.show();
-     * 
-     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
-     *
-     * @since 1.0.0 2022-04-15
-     *
-     *
-     * 
-     */
+
     public void show() {
         for (int i = 0; i < planetarys.size(); i++) {
             System.out.println("El ID de planeta es: " +
