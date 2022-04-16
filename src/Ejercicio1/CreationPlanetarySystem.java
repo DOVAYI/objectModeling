@@ -1,5 +1,22 @@
-package Ejercicio1;
+/**
+ * Esta clase permite crear los Planetas.
+ * No se toma valores Reales de la masa,densidad de planetas y/o 
+ * cuerpos espaciales  por motivos practicos.
+ * ej.:
+ * 
+ * EstaClase clase = new EstaClase();
+ * clase.show();
+ * clase.showAttractionPlanetaryGravitational();
+ 
+ * @version 1.0.0 2022-04-15
+ * 
+ * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+ *
+ * @since 1.0.0 2022-04-15
+ *
+ */
 
+package Ejercicio1;
 import java.util.ArrayList;
 
 public class CreationPlanetarySystem {
@@ -7,6 +24,23 @@ public class CreationPlanetarySystem {
     private PlanetarySystem planetarySystem;
     private ArrayList<PlanetarySystem> planetarys;
 
+    /**
+     * Este metodo su utiliza para calcular fuerza de atraccion entre 2 planetas
+     *
+     * ejemplo de como usar.:
+     * despues de instanciar esta clase:
+     * 
+     * clase.listPlanetary();
+     * 
+     *@return retorna Lista de obtejos tipo PlanetarySystem
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     public ArrayList<PlanetarySystem> listPlanetary() {
 
         planetarys = new ArrayList<>();
@@ -39,6 +73,23 @@ public class CreationPlanetarySystem {
 
     }
 
+    /**
+     * Este metodo su utiliza para mostrar la fuerza de atraccion gravitacional
+     * entre 2 planetas elegidos al azar
+     * @param recibe como parametro 2 numeros, estos reprsentan los planetas
+     * 
+     * ejemplo de como usar.:
+     * solo se puede usar dentro de la clase
+     * 
+     * numbeRandom(param1,param2);
+     
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     private void numbeRandom(int number1, int number2) {
 
         double result = attractionPlanetaryGravitational(number1, number2);
@@ -48,7 +99,25 @@ public class CreationPlanetarySystem {
                 + planetarys.get(number2).getName() + " es: " + result);
 
     }
-
+    /**
+     * Este metodo su utiliza para calcular la fuerza de atraccion gravitacional
+     * entre 2 planetas elegidos al azar
+     * @param recibe como prametro 2 numeros, aleatorio 0 y 4  estos representan los planetas
+     * 
+     * ejemplo de como usar.:
+     * solo se puede usar dentro de la clase
+     * 
+     * attractionPlanetaryGravitational(param1,param2);
+     * 
+     * @return retorna el valor de la fuerza de atracción gravitacional
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     private double attractionPlanetaryGravitational(int num1, int num2) {
 
         double distanceToSunToplanet = planetarys.get(num1).getDistanceToSun();
@@ -63,7 +132,22 @@ public class CreationPlanetarySystem {
         return attractionplanetary;
 
     }
-
+    /**
+     * Este metodo su utiliza para acceder a los metodos privados
+     *
+     * ejemplo de como usar.:
+     * despues de instanciar esta clase:
+     * 
+     * EstaClase clase =new EstaClase();
+     * clase.showAttractionPlanetaryGravitational();
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     public void showAttractionPlanetaryGravitational() {
         int numero1 = (int) (Math.random() * 5) + 1;
         int numero2 = (int) (Math.random() * 5) + 1;
@@ -73,7 +157,23 @@ public class CreationPlanetarySystem {
         }
         numbeRandom((numero1 - 1), (numero2 - 1));
     }
-
+    /**
+     * Este metodo su utiliza para mostrar todos los planetas
+     * de este sistema. 
+     *
+     * ejemplo de como usar.:
+     * despues de instanciar esta clase:
+     * 
+     * EstaClase clase =new EstaClase();
+     * clase.show();
+     * 
+     * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+     *
+     * @since 1.0.0 2022-04-15
+     *
+     *
+     * 
+     */
     public void show() {
         for (int i = 0; i < planetarys.size(); i++) {
             System.out.println("El ID de planeta es: " +
