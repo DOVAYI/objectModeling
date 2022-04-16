@@ -14,7 +14,7 @@
  *
  * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
  *
- * @since 1.0.0 2022-04-15
+ * @since 1.0.1 2022-04-15
  *
  */
 
@@ -100,13 +100,15 @@ public class PlanetarySystem {
      * 
      * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
      *
-     * @since 1.0.0 2022-04-15
+     * @since 1.0.1 2022-04-15
      *
      *
      * 
      */
-    public double attractionGravitational(double dough1, double dough2, double distance) {
-        double result = (getGravitationalConstant() * (dough1 * dough2)) / (distance * distance);
+    public double attractionGravitational(double dough1, double dough2,
+            double distance) {
+        double result = (getGravitationalConstant() * (dough1 * dough2))
+                / (distance * distance);
         return result;
     }
 
