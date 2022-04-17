@@ -6,6 +6,10 @@ import java.util.Scanner;
 import Ejercicio1.CreationPlanetarySystem;
 import Ejercicio3.MethodBubbleOrQuicksort;
 import Ejercicio4.CreateVehicle;
+import Ejercicio4.Vehiculo;
+import Ejercicio5.Coche;
+import Ejercicio5.Lancha;
+import Ejercicio5.Avion;
 import Validadores.Validator;
 
 public class App {
@@ -106,7 +110,14 @@ public class App {
                         createvehicle.show();
                     break;
                 case 5:
-
+                    Vehiculo lancha=new Lancha("motor", 4,"21-02-2008");
+                    System.out.println(lancha.toString());
+                    System.out.println("-----------------------------");
+                    Vehiculo coche= new Coche("Disco",5,"19-06-1991");
+                    System.out.println(coche.toString());
+                    System.out.println("-----------------------------");
+                    Vehiculo avion= new Avion(10,55,"04-02-2013");
+                    System.out.println(avion.toString());
                     break;
                 case 6:
 
