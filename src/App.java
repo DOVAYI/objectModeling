@@ -9,6 +9,7 @@ import Ejercicio4.CreateVehicle;
 import Ejercicio4.Vehiculo;
 import Ejercicio5.Coche;
 import Ejercicio5.Lancha;
+import Ejercicio6.UseVectorClass;
 import Ejercicio5.Avion;
 import Validadores.Validator;
 
@@ -30,9 +31,9 @@ public class App {
                 System.out.println("Presione 1 para ver Ejercicio N° 1");
                 System.out.println("Presione 2 para ver Ejercicio N° 2");
                 System.out.println("Presione 3 para ver Ejercicio N° 3");
-                System.out.println("Presione 1 para ver Ejercicio N° 4");
-                System.out.println("Presione 1 para ver Ejercicio N° 5");
-                System.out.println("Presione 1 para ver Ejercicio N° 6");
+                System.out.println("Presione 4 para ver Ejercicio N° 4");
+                System.out.println("Presione 5 para ver Ejercicio N° 5");
+                System.out.println("Presione 6 para ver Ejercicio N° 6");
                 System.out.println("Presione el numero segun el valor de la Opción");
 
                 try {
@@ -120,7 +121,8 @@ public class App {
                     System.out.println(avion.toString());
                     break;
                 case 6:
-
+                    UseVectorClass usevectorclass= new UseVectorClass();
+                    usevectorclass.show();
                     break;
             }
 
