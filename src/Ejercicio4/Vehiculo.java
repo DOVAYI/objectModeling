@@ -1,11 +1,25 @@
+/**
+ * Esta clase crear objetos tipo vehiculo
+ * ej.:
+ * 
+ * EstaClase clase = new EstaClase();
+ * 
+ * @version 1.0.0 2022-04-16
+ * 
+ * @author Luis Alfredo Romero Cuello - exadom21@gmail.com
+ *
+ * @since 1.0.0 2022-04-16
+ *
+ */
+
 package Ejercicio4;
 
 public class Vehiculo {
     
     private int numberOfPassengers;
-    private boolean crew;// tripulacion
-    private int numberOfWheels;// numero de ruedas
-    private String enrollmentDate;// fecha de matriculas
+    private boolean crew;
+    private int numberOfWheels;
+    private String enrollmentDate;
     private String typeVehicle;
 
     public int getNumberOfPassengers() {
